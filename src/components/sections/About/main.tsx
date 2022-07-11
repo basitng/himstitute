@@ -45,14 +45,14 @@ export default function Main() {
         {data.map((item) => (
           <Grid key={item.id} item xs={12} md={4}>
             <Box sx={{ textAlign: "center" }}>
-              <Box sx={{ mt: item.mt && -2 }}>
+              <Box sx={{ mt: item.mt ? -2 : 0 }}>
                 <Image
                   width={item.width}
                   height={item.height}
                   src={item.icon}
                 />
               </Box>
-              <Box sx={{ mt: item.mt && -5 }}>
+              <Box sx={{ mt: item.mt ? -5 : 0 }}>
                 <Typography variant="h5">{item.title}</Typography>
                 <Typography
                   sx={{ color: " #AEB8C8", fontFamily: "ngo-small" }}
