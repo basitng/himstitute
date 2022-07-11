@@ -100,7 +100,7 @@ export default function Main() {
         style={{ overflow: "hidden" }}
       >
         {contents.map((item) => (
-          <SwiperSlide>
+          <SwiperSlide key={item.id}>
             <Box sx={{ background: "#adc3e99f", p: 2, borderRadius: 2 }}>
               <Typography sx={{ color: "var(--primary)" }} variant={"h6"}>
                 {item.company}

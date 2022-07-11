@@ -32,7 +32,7 @@ export default function Main() {
       </Box>
       <Box sx={{ mt: 5 }}>
         {contents.map((item) => (
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box key={item.id} sx={{ display: "flex", alignItems: "center" }}>
             <Image src={`/media/svg/${item.icon}`} width={60} height={60} />
             <Typography sx={{ ml: 1 }} variant="h5" color="white">
               {item.title}

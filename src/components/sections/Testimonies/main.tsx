@@ -84,7 +84,7 @@ export default function Main() {
         style={{ overflowX: "hidden" }}
       >
         {Testimonials.map((item) => (
-          <SwiperSlide>
+          <SwiperSlide key={item.id}>
             <Box
               sx={{
                 display: "grid",

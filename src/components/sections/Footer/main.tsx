@@ -145,6 +145,7 @@ export default function main() {
               <Typography
                 variant="body1"
                 color="white"
+                key={link.name}
                 sx={{
                   cursor: "pointer",
                   transition: "400ms ease-out",
@@ -175,6 +176,7 @@ export default function main() {
               <Typography
                 variant="body1"
                 color="white"
+                key={link.name}
                 sx={{
                   cursor: "pointer",
                   transition: "400ms ease-out",
@@ -205,6 +207,7 @@ export default function main() {
               <Typography
                 variant="body1"
                 color="white"
+                key={link.name}
                 sx={{
                   cursor: "pointer",
                   transition: "400ms ease-out",
