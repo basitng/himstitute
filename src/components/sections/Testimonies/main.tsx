@@ -72,6 +72,12 @@ export default function Main() {
         modules={[Pagination, Scrollbar, A11y]}
         spaceBetween={10}
         slidesPerView={1}
+        breakpoints={{
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+        }}
         speed={600}
         pagination
         autoplay={{ delay: 1000 }}

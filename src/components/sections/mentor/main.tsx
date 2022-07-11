@@ -86,6 +86,16 @@ export default function Main() {
         spaceBetween={10}
         slidesPerView={3}
         speed={600}
+        breakpoints={{
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          768: {
+            width: 768,
+            slidesPerView: 3,
+          },
+        }}
         pagination
         style={{ overflow: "hidden" }}
       >
