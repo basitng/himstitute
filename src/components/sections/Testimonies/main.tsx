@@ -79,7 +79,13 @@ export default function Main() {
       >
         {Testimonials.map((item) => (
           <SwiperSlide>
-            <center>
+            <Box
+              sx={{
+                display: "grid",
+                placeContent: "center",
+                alignItems: "center",
+              }}
+            >
               <Box
                 sx={{
                   mt: 10,
@@ -126,7 +132,7 @@ export default function Main() {
                   />
                 </Box>
               </Box>
-            </center>
+            </Box>
           </SwiperSlide>
         ))}
       </Swiper>
