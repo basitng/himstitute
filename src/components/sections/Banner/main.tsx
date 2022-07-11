@@ -101,8 +101,8 @@ export default function Main() {
                   zIndex: 1,
                 }}
               >
-                <Box sx={{ width: "90%" }}>
-                  <Typography variant="h2" color="white">
+                <Box sx={{ width: "90%" }} className="resp-width">
+                  <Typography className="resp-h1" variant="h2" color="white">
                     {banner.title}
                     <span className="color--base">
                       {" "}
@@ -118,6 +118,7 @@ export default function Main() {
                     }}
                     color="white"
                     variant="h6"
+                    className="resp-width"
                   >
                     {banner.content}
                   </Typography>
