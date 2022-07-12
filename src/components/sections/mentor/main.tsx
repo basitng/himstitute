@@ -64,15 +64,22 @@ export default function Main() {
         p: "100px 50px",
         position: "relative",
       }}
+      className="resp-p100_20"
     >
       <Box sx={{ position: "absolute", top: "0%", right: "-5%" }}>
         <Image src={"/media/svg/Dotted.svg"} width={700} height={700} />
       </Box>
       <Box sx={{ mb: 10 }}>
-        <Typography color="white" sx={{ width: "46%" }} variant="h2">
+        <Typography
+          className="resp-width resp-h1"
+          color="white"
+          sx={{ width: "46%" }}
+          variant="h2"
+        >
           Become <span className="color--base">Successful</span> In Your Career
         </Typography>
         <Typography
+          className="resp-width resp-h4"
           sx={{ fontFamily: "ngo-small", width: "60%", color: "#ddd" }}
           variant="h5"
         >
@@ -84,7 +91,6 @@ export default function Main() {
       <Swiper
         modules={[Pagination, Scrollbar, A11y]}
         spaceBetween={10}
-        slidesPerView={3}
         speed={600}
         breakpoints={{
           640: {
@@ -93,7 +99,7 @@ export default function Main() {
           },
           768: {
             width: 768,
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
         }}
         pagination

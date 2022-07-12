@@ -16,15 +16,27 @@ export default function Main() {
         background: "rgba(1, 24, 16, 0.744)",
         p: "100px 50px",
       }}
+      className="resp-p100_20"
     >
-      <Box sx={{ position: "absolute", top: "0%", right: "-5%" }}>
+      <Box
+        className="resp-d-none"
+        sx={{ position: "absolute", top: "0%", right: "-5%" }}
+      >
         <Image src={"/media/svg/spaced_dot.svg"} width={200} height={200} />
       </Box>
-      <Box sx={{ position: "absolute", bottom: "0%", right: "-5%" }}>
+      <Box
+        className="resp-d-none"
+        sx={{ position: "absolute", bottom: "0%", right: "-5%" }}
+      >
         <Image src={"/media/svg/circle.svg"} width={500} height={500} />
       </Box>
       <Box>
-        <Typography variant="h2" sx={{ width: "60%" }} color="white">
+        <Typography
+          variant="h2"
+          className="resp-width resp-h1"
+          sx={{ width: "60%" }}
+          color="white"
+        >
           Why are the best students using Himstitue?{" "}
           <span className="color--base">Because they want</span>{" "}
           <span className="color--base1">careers, not gigs.</span>

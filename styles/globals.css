@@ -127,13 +127,22 @@ a {
     display: none !important;
   }
   .resp-h1 {
-    font-size: calc(1rem * 1.6);
+    font-size: calc(2rem * 1.3);
   }
   .resp-width {
     width: 100% !important;
   }
-  .resp-h2 {
+  .resp-p100_20 {
+    padding: 100px 20px;
   }
-  .resp-h3 {
+  .resp-h4 {
+    font-size: calc(1rem * 1.2);
+  }
+  .resp-d-none {
+    display: none;
+  }
+  .resp-center {
+    display: grid !important;
+    place-content: center !important;
   }
 }

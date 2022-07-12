@@ -32,6 +32,7 @@ export default function Main() {
   ];
   return (
     <Box
+      className="resp-p100_20"
       sx={{
         p: "100px 50px",
         width: "100%",
@@ -55,10 +56,11 @@ export default function Main() {
       }}
     >
       <Box sx={{ position: "relative", zIndex: 3 }}>
-        <Typography variant="h2" color="white">
+        <Typography className="resp-width" variant="h2" color="white">
           TESTIMONIALS
         </Typography>
         <Typography
+          className="resp-width"
           sx={{ width: "40%", lineHeight: "1.3rem" }}
           variant="h6"
           color="white"
@@ -68,13 +70,17 @@ export default function Main() {
         </Typography>
       </Box>
       <Swiper
-        className="testimonial-swiper"
+        className="testimonial-swiper resp-center"
         modules={[Pagination, Scrollbar, A11y]}
         spaceBetween={10}
         slidesPerView={1}
         breakpoints={{
           640: {
             width: 640,
+            slidesPerView: 1,
+          },
+          780: {
+            width: 780,
             slidesPerView: 1,
           },
         }}
@@ -95,6 +101,10 @@ export default function Main() {
               <Box
                 sx={{
                   mt: 10,
+                  display: "grid",
+                  placeContent: "center",
+                  alignItems: "center",
+
                   background: "#0bf6a4b7",
                   height: "70vh",
                   borderRadius: " 66px 0px",
@@ -103,11 +113,13 @@ export default function Main() {
                   position: "relative",
                   //   overflow: "visible",
                 }}
+                className="resp-p100_20 resp-width"
               >
                 <Typography
                   variant="h6"
                   color="white"
                   sx={{ fontFamily: "ngo-small", width: "60%" }}
+                  className="resp-width"
                 >
                   {item.p}
                 </Typography>
@@ -119,16 +131,7 @@ export default function Main() {
                   <FormatQuote />
                   {item.name}
                 </Typography>
-                <Box
-                  sx={{
-                    zIndex: 100000,
-                    position: "absolute",
-                    bottom: "0%",
-                    transform: "translate(-50%, -50%)",
-                    left: "50%",
-                    display: "block",
-                  }}
-                >
+                <Box sx={{}}>
                   <Avatar
                     sx={{
                       width: 180,
