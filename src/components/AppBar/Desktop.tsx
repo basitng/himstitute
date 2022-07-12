@@ -21,9 +21,9 @@ export default function Desktop() {
       path: "mentorship",
     },
     {
-      name: "Articles",
+      name: "Career",
       id: useId(),
-      path: "articles",
+      path: "career",
     },
   ];
   return (
@@ -55,6 +55,22 @@ export default function Desktop() {
             </Link>
           ))}
           <Box sx={{ ml: 6 }}>
+            <Button
+              disableElevation
+              size="large"
+              variant="contained"
+              color="primary"
+              sx={{
+                borderRadius: 50,
+                background: "transparent",
+                outline: "1px solid #fff",
+                color: "#fff",
+                width: "210px",
+                height: 55,
+              }}
+            >
+              Articles
+            </Button>
             <Button
               disableElevation
               size="large"
