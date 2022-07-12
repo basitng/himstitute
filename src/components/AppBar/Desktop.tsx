@@ -33,7 +33,7 @@ export default function Desktop() {
       sx={{ background: "transparent", color: "#fff" }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        <img src="/media/Logo.svg" className="nav--logo" />
+        <img src="/navlogo.svg" className="nav--logo" />
 
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {NavLinks.map((link) => (
